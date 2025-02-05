@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="../universal.css">
+    <link rel="stylesheet" href="./people.style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <span style="--i:1;"><img src="https://images.pexels.com/photos/1065084/pexels-photo-1065084.jpeg?auto=compress&cs=tinysrgb&w=600" alt=""></span>
+            <span style="--i:2;"><img src="https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=600" alt=""></span>
+            <span style="--i:3;"><img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=600" alt=""></span>
+            <span style="--i:4;"><img src="https://media.istockphoto.com/id/1403196779/photo/a-happy-mixed-race-family-of-three-relaxing-in-the-lounge-and-being-playful-together-loving.jpg?b=1&s=612x612&w=0&k=20&c=AxcXFs3INV9dw-e_Ma7ypYBRWyLsQP9NYNt3h4kl4Mc=" alt=""></span>
+            <span style="--i:5;"><img src="https://media.istockphoto.com/id/1344954298/photo/family-with-dog-in-the-car.jpg?b=1&s=612x612&w=0&k=20&c=A8APCFVECjYaFvb6mj0lgHMn-9btsKqobiC0nGnutIQ=" alt=""></span>
+            <span style="--i:6;"><img src="https://media.istockphoto.com/id/1309405105/photo/beauty-portrait-of-young-brunette.jpg?b=1&s=612x612&w=0&k=20&c=GbkDFqOSH4q4fl_xI94QvmzkhBJvEoBipcx9csKe3YY=" alt=""></span>
+            <span style="--i:7;"><img src="https://images.pexels.com/photos/4148842/pexels-photo-4148842.jpeg?auto=compress&cs=tinysrgb&w=600" alt=""></span>
+            <span style="--i:8;"><img src="https://media.istockphoto.com/id/1465916031/photo/the-way-to-the-plane.jpg?b=1&s=612x612&w=0&k=20&c=MH495I35MBcdphKytLS8S-p70r0qAxM4CRKI2Ml5CCE=" alt=""></span>
+            <span style="--i:9;"><img src="https://images.pexels.com/photos/4553618/pexels-photo-4553618.jpeg?auto=compress&cs=tinysrgb&w=600" alt=""></span>
+            <span style="--i:10;"><img src="https://media.istockphoto.com/id/1429367591/photo/a-family-on-summer-holidays-stands-by-the-swimming-pool-and-enjoys-the-beautiful-sunset.jpg?b=1&s=612x612&w=0&k=20&c=3N0Cvy1XHAPAxPKeJm2qPYduJK0qphDMd-xSSKfK2kY=" alt=""></span></div>
+
+            <div class="btns">
+                <button class="prev">Prev</button>
+                <button class="next">Next</button>
+            </div>
+        </div>
+
+        <script>
+            let deg = 0
+            document.querySelector('.prev').addEventListener('click', () => {
+                deg += 45
+                document.querySelector('.box').style = ` transform: perspective(1000px) rotateY(${deg}deg);`
+            });
+
+            document.querySelector('.next').addEventListener('click', () => {
+                deg -= 45
+                document.querySelector('.box').style = ` transform: perspective(1000px) rotateY(${deg}deg);`
+            });
+        </script>
+</body>
+</html>
