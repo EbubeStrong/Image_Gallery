@@ -1,11 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to My Project</title>
+    <link rel="icon" href="https://th.bing.com/th?id=OIP.IeyoFq7AwY6EYAgkxEW10QHaF_&w=277&h=224&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2">
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Welcome to my<br><span>GALLERY AlBULM</span> </h1>
+      </header>
+      <main>
+        <section class="features">
+          <div class="feature-card">
+            <div class="feature-card-inner">
+              <div class="feature-card-front">
+                <i data-lucide="code" class="feature-icon"></i>
+                <h3>Image GALLERY</h3>
+                <p>Click to view</p>
+              </div>
+              <div class="feature-card-back">
+                <i data-lucide="external-link" class="feature-icon"></i>
+                <img src="./img/image-1.png" alt="">
+                <a href="./person-slider/index.html" target="_blank" class="project-link">Go to GALLERY</a>
+              </div>
+            </div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card-inner">
+              <div class="feature-card-front">
+                <i data-lucide="code" class="feature-icon"></i>
+                <h3>Car GALLERY</h3>
+                <p>Click to view</p>
+              </div>
+              <div class="feature-card-back">
+                <i data-lucide="external-link" class="feature-icon"></i>
+                <img src="./img/image-2.png" alt="" width="100" height="100">
+                <a href="./car-slider/index.html" class="project-link" target="_blank">Go to GALLERY</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <p>&copy; @2025 codeAlpha Internship by Abraham Samuel. All rights reserved.</p>
+      </footer>
+    </div>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
 </html>
